@@ -1,49 +1,84 @@
-<!-- FILE STRUCTURE --><!--
-/index.html
-/style.css
-/script.js
-/assets/
-  images/
-  icons/
---><!-- ================= index.html ================= --><!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shinchan | Developer Portfolio</title>  <!-- Google Font -->  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">  <!-- CSS -->  <link rel="stylesheet" href="style.css">
+  <title>Shinchan Bot | Official Website</title>
+  <link rel="icon" href="assets/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body><header class="hero-section">
+<body>
+
+<div id="loader"><span></span></div>
+<div class="cursor"></div>
+<canvas id="bg"></canvas>
+
+<nav class="navbar">
+  <div class="nav-left">
+    <img src="assets/images/bot-avatar.png" class="bot-avatar">
+    <span class="logo">Shinchan</span>
+  </div>
+  <ul>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#commands">Commands</a></li>
+    <li><a href="#stats">Stats</a></li>
+    <li><a href="#community">Community</a></li>
+  </ul>
+  <a class="invite-btn" target="_blank" href="https://discord.com/oauth2/authorize?client_id=1455294535990120742&permissions=7148619131317655&integration_type=0&scope=bot+applications.commands">Invite Bot</a>
+</nav>
+
+<header class="hero-section">
   <div class="hero">
-    <h1>Hi, I'm <span>Shinchan</span></h1>
-    <p>Developer • Designer • Creator</p>
-    <div class="btns">
-      <button onclick="scrollToSection('projects')">Projects</button>
-      <button onclick="scrollToSection('contact')">Contact</button>
-    </div>
+    <h1>Shinchan <span>Discord Bot</span></h1>
+    <p class="typing"></p>
+    <a class="primary-btn" target="_blank" href="https://discord.com/oauth2/authorize?client_id=1455294535990120742&permissions=7148619131317655&integration_type=0&scope=bot+applications.commands">Add to Server</a>
   </div>
-</header><section id="about">
-  <h2>About Me</h2>
-  <p>
-    I'm Shinchan, a modern developer focused on creating clean, fast and animated web experiences.
-  </p>
-</section><section id="projects">
-  <h2>Projects</h2>
+</header>
+
+<section id="features" class="reveal features">
+  <h2>Powerful Features</h2>
   <div class="cards">
-    <div class="card">Discord Bot Platform</div>
-    <div class="card">Developer Portfolio</div>
-    <div class="card">Automation Tools</div>
+    <div class="card">🎵 Music System</div>
+    <div class="card">🛠 Utility</div>
+    <div class="card">🛡 Moderation</div>
+    <div class="card">🎫 Tickets</div>
+    <div class="card">👥 Staff Manager</div>
+    <div class="card">🔁 Server Cloner</div>
+    <div class="card">🎙 Temporary VC</div>
   </div>
-</section><section id="services">
-  <h2>What I Do</h2>
+</section>
+
+<section id="commands" class="reveal">
+  <h2>Popular Commands</h2>
   <div class="cards">
-    <div class="card">Web Development</div>
-    <div class="card">Bot Development</div>
-    <div class="card">UI / UX Design</div>
-    <div class="card">Automation</div>
+    <div class="card">/play</div>
+    <div class="card">/pause</div>
+    <div class="card">/ticket</div>
+    <div class="card">/clone</div>
+    <div class="card">/userinfo</div>
+    <div class="card">/ban</div>
   </div>
-</section><section id="contact">
-  <h2>Contact</h2>
-  <p>Email: contact@errorxdocs.netlify.app</p>
-</section><footer>
-  © Shinchan | errorxdocs.netlify.app
-</footer><script src="script.js"></script></body>
+</section>
+
+<section id="stats" class="reveal stats-section">
+  <h2>Live Statistics</h2>
+  <div class="stats">
+    <div><span id="servers">0</span><p>Servers</p></div>
+    <div><span id="users">0</span><p>Users</p></div>
+    <div><span class="online">● Online</span></div>
+  </div>
+</section>
+
+<section id="community" class="reveal">
+  <h2>Join Our Community</h2>
+  <iframe src="https://discord.com/widget?id=1401807828963823636&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+</section>
+
+<footer>
+  © 2026 Shinchan Bot • errorxdocs.netlify.app
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
